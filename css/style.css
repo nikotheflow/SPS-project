@@ -123,9 +123,9 @@ body {
 }
 .login-form_password-view-button {
   height: 13px;
-  width: 16px;
+  width: 17px;
   border: none;
-  background-color: #fff;
+  background-color: transparent;
   background-image: url(../img/eye.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -346,4 +346,43 @@ body {
   font-size: 12px;
   line-height: 12px;
   color: #6a6a6a;
+}
+.tabbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 30.5px 30.5px 0px 0px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.tabbar_buttons {
+  width: 275px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.tabbar_button {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tabbar_button_home {
+  background-image: url(../img/home.svg);
+}
+.tabbar_button_statistic {
+  background-image: url(../img/statistic.svg);
+}
+.tabbar_button_profile {
+  background-image: url(../img/profile.svg);
+}
+.tabbar_button_setting {
+  background-image: url(../img/setting.svg);
 }
