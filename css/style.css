@@ -358,31 +358,18 @@ body {
   box-sizing: border-box;
   padding-top: 20px;
 }
-.tabbar_buttons {
+.tabbar_list {
   width: 275px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
   margin: auto;
 }
-.tabbar_button {
-  width: 22px;
-  height: 22px;
-  background-color: transparent;
-  border: none;
+.tabbar_item {
   cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.tabbar_button_home {
-  background-image: url(../img/home.svg);
-}
-.tabbar_button_statistic {
-  background-image: url(../img/statistic.svg);
-}
-.tabbar_button_profile {
-  background-image: url(../img/profile.svg);
-}
-.tabbar_button_setting {
-  background-image: url(../img/setting.svg);
+.tabbar_item_active {
+  fill: #7167da;
 }
