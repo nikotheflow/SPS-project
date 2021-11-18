@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in</title>
+  <title>Sign up</title>
   <!-- add fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,19 +16,20 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="login-page">
-    <h1 class="login-page_title title">С возвращением!</h1>
-    <p class="login-page_text text">Введите свои данные или<br>войдите с помощью социальных сетей</p>
-    <form action="" class="login-form login-page_login-form">
-      <input type="email" placeholder="E-mail" class="login-form_input login-form_email-input">      
+  <div class="signup-page">
+    <h1 class="signup-page_title title">Регистрация</h1>
+    <p class="signup-page_text text">Введите свои данные или<br>войдите с помощью социальных сетей</p>
+    <form action="" class="login-form signup-page_login-form">
+      <input type="text" placeholder="Имя" class="login-form_input login-form_name-input">
+      <input type="email" placeholder="E-mail" class="login-form_input login-form_email-input">
       <input type="password" placeholder="Пароль" class="login-form_input login-form_password-input">
-      <button class="login-form_password-view-button"></button>      
+      <button class="login-form_password-view-button"></button>
     </form>
-    <a href="#" class="login-page_forgot-link">Забыли пароль?</a>
-    <button class="login-page_primary-button primary-button">Войти</button>
+    <button class="signup-page_primary-button primary-button">Зарегестрироваться</button>
     <div class="social-login">
       <div class="social-login__title">
-        <svg class="social-login__title_line width=" 20" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="social-login__title_line width=" 20" height="2" viewBox="0 0 20 2" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <line y1="1" x2="20" y2="1" stroke="#9E9E9E" stroke-width="2" />
         </svg>
         <p class="social-login__title_text">Войти с помощью</p>
@@ -42,8 +43,8 @@
       </div>
     </div>
     <div class="login-question">
-      <p class="login-question_question">Новый пользователь?</p>
-      <a href="signup.html" class="login-question_link">Создать аккаунт</a>
+      <span class="login-question_question">Уже есть аккаунт?</span>
+      <a href="login.html" class="login-question_link">Войти</a>
     </div>    
   </div>
 </body>

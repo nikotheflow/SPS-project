@@ -1,20 +1,21 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
   width: 375px;
   height: 812px;
   margin: 0;
 }
-.splash-container {
+.splash-page {
   padding: 66px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.splash__image {
+.splash-page_image {
   margin: 0 auto 62px 56px;
 }
-.splash__title {
+.splash-page_title {
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
@@ -27,7 +28,7 @@ body {
   line-height: 26px;
   color: #6a6a6a;
 }
-.splash__text {
+.ssplash-page_text {
   text-align: center;
   margin: 0 0 40px 0;
 }
@@ -42,25 +43,21 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-}
-.splash__primary-button {
-  box-sizing: border-box;
-  width: 261px;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 130%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 52px 0 102px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
-.splash__arrow-image {
-  margin-left: 30px;
-  vertical-align: center;
+.splash-page_primary-button {
+  width: 261px;
 }
-
-.login {
+.login-page,
+.signup-page {
   padding: 100px 20px 108px;
   background-color: #fbfbfb;
+}
+.signup-page {
+  padding-bottom: 78px;
 }
 .title {
   font-weight: 800;
@@ -68,18 +65,20 @@ body {
   line-height: 30px;
   color: #1a1d1e;
 }
-.login__title {
+.login-page_title,
+.signup-page_title {
   padding-left: 10px;
   margin: 0 0 10px 0;
 }
-.login__text {
+.login-page_text,
+.signup-page_text {
   padding-left: 10px;
   margin: 0 0 30px;
 }
-.login__form {
+.login-form {
   position: relative;
 }
-.input {
+.login-form_input {
   width: 335px;
   height: 54px;
   box-sizing: border-box;
@@ -97,19 +96,25 @@ body {
   line-height: 130%;
   color: #6a6a6a;
 }
-.input:not(:last-child) {
+.login-form_input:not(:last-of-type) {
   margin-bottom: 24px;
 }
-.login__input:last-child {
+.login-page_login-form {
   margin-bottom: 10px;
 }
-.input__email {
+.signup-page_login-form {
+  margin-bottom: 40px;
+}
+.login-form_email-input {
   background-image: url(../img/email.svg);
 }
-.input__password {
+.login-form_password-input {
   background-image: url(../img/password.svg);
 }
-.input__password-view-button {
+.login-form_name-input {
+  background-image: url(../img/name.svg);
+}
+.login-form_password-view-button {
   height: 13px;
   width: 16px;
   border: none;
@@ -119,10 +124,10 @@ body {
   background-position: center;
   position: absolute;
   right: 20px;
-  top: 99px;
+  bottom: 20px;
   cursor: pointer;
 }
-.login__forgot-text {
+.login-page_forgot-link {
   font-size: 12px;
   line-height: 12px;
   color: #6a6a6a;
@@ -131,14 +136,11 @@ body {
   text-align: right;
   margin-bottom: 40px;
 }
-.login__primary-button {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
+.login-page_primary-button,
+.signup-page_primary-button {
   margin-bottom: 40px;
 }
-.login-with {
+.social-login__title {
   margin: 0 auto;
   width: 204px;
   display: flex;
@@ -146,18 +148,18 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-.login-with_text {
+.social-login__title_text {
   margin: 0;
   font-size: 16px;
   line-height: 16px;
   color: #6a6a6a;
 }
-.social-buttons {
+.social-login__social-buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
-.social-button {
+.social-login__social-buttons_social-button {
   width: 60px;
   height: 60px;
   border-radius: 20px;
@@ -166,27 +168,27 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.social-button:not(:last-child) {
+.social-login__social-buttons_social-button:not(:last-child) {
   margin-right: 20px;
 }
-.social-buttons__google {
+.social-login__social-buttons_google {
   background-color: #e9f4ff;
   background-image: url(../img/google.svg);
 }
-.social-buttons__facebook {
+.social-login__social-buttons_facebook {
   background-color: #4460a0;
   background-image: url(../img/facebook.svg);
 }
-.login__create {
+.login-question {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   color: #6a6a6a;
 }
-.login__create_text {
+.login-question_question {
   margin: 0;
 }
-.login__create_link {
+.login-question_link {
   font-weight: 700;
   text-decoration: none;
   color: #6a6a6a;
