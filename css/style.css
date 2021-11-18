@@ -69,10 +69,14 @@ body {
 }
 .login__title {
   padding-left: 10px;
+  margin: 0 0 10px 0;
 }
 .login__text {
   padding-left: 10px;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
+}
+.login__form {
+  position: relative;
 }
 .input {
   width: 335px;
@@ -104,6 +108,19 @@ body {
 .input__password {
   background-image: url(/img/password.svg);
 }
+.input__password-view-button {
+  height: 13px;
+  width: 16px;
+  border: none;
+  background-color: #fff;
+  background-image: url(/img/eye.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 20px;
+  top: 99px;
+  cursor: pointer;
+}
 .login__forgot-text {
   font-size: 12px;
   line-height: 12px;
@@ -129,6 +146,7 @@ body {
   margin-bottom: 30px;
 }
 .login-with_text {
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   color: #6a6a6a;
