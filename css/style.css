@@ -41,6 +41,7 @@ body {
   cursor: pointer;
   text-align: center;
   color: #ffffff;
+  text-decoration: none;
 }
 .splash__primary-button {
   box-sizing: border-box;
@@ -103,10 +104,10 @@ body {
   margin-bottom: 10px;
 }
 .input__email {
-  background-image: url(/img/email.svg);
+  background-image: url(../img/email.svg);
 }
 .input__password {
-  background-image: url(/img/password.svg);
+  background-image: url(../img/password.svg);
 }
 .input__password-view-button {
   height: 13px;
