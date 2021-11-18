@@ -21,16 +21,16 @@ body {
   line-height: 44px;
   text-align: center;
   color: #1a1d1e;
-  margin: 0 0 5px 0;
+  margin: 0 0 20px 0;
 }
 .text {
   font-size: 16px;
   line-height: 26px;
   color: #6a6a6a;
 }
-.ssplash-page_text {
+.splash-page_text {
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 0 0 35px 0;
 }
 .primary-button {
   display: block;
