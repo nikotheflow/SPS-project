@@ -60,11 +60,20 @@ body {
   padding: 100px 20px 0 20px;
   background-color: #fbfbfb;
 }
+.login-page {
+  padding: 100px 20px 0 20px;
+}
 .signup-page {
-  padding-bottom: 78px;
+  padding: 100px 20px 78px 20px;
 }
 .search-page {
-  padding-top: 40px;
+  padding: 40px 20px 0 20px;
+}
+.filter-page {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: rgba(43, 43, 43, 0.4);
 }
 .title {
   font-weight: 800;
@@ -372,4 +381,113 @@ body {
 }
 .tabbar_item_active {
   fill: #7167da;
+}
+.filter-window {
+  width: 375px;
+  height: 708px;
+  background: #fbfbfb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50px 50px 0 0;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.filter-window_line {
+  text-align: center;
+  margin: 10px auto 25px;
+  font-size: 0;
+}
+.filter-window_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1a1d1e;
+  margin: 0 0 50px 0;
+}
+.select-block {
+  margin-bottom: 30px;
+}
+.select-block_row {
+  display: flex;
+  justify-content: space-between;
+}
+.select-block_title,
+.filter-authors_title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1a1d1e;
+  margin: 0 0 15px 0;
+}
+.select-block_field {
+  width: 100%;
+  height: 54px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.select-block_field_mini {
+  width: 160px;
+}
+.select-block_option {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6a6a6a;
+}
+.select-block_option_mini {
+  margin: 0 auto 0 15px;
+}
+.select-block_arrow {
+  font-size: 0;
+}
+.select-block_icon {
+  font-size: 0;
+}
+.filter-authors_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.filter-authors_item {
+  width: 100px;
+  height: 35px;
+  border: 1px solid #9e9e9e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6a6a6a;
+  cursor: pointer;
+  padding: 0;
+  flex: 0 0 29%;
+}
+.filter-authors_item:nth-child(1) {
+  margin-bottom: 15px;
+}
+.filter-authors_name {
+  margin: 0;
+}
+.filter-authors_all {
+  display: flex;
+  width: 99.65px;
+  height: 37.5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #6a6a6a;
+  cursor: pointer;
 }
