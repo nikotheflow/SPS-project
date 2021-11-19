@@ -48,32 +48,51 @@ body {
   line-height: 16px;
   text-transform: uppercase;
 }
+.primary-button_disable {
+  background: #c8c6de;
+  cursor: default;
+}
+.secondary-button {
+  display: block;
+  width: 100%;
+  height: 54px;
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  color: #7167da;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 .splash-page_primary-button {
   width: 261px;
 }
-.login-page,
-.signup-page,
-.search-page {
+.container {
   box-sizing: border-box;
   width: 375px;
   height: 812px;
   padding: 100px 20px 0 20px;
   background-color: #fbfbfb;
 }
-.login-page {
-  padding: 100px 20px 0 20px;
-}
 .signup-page {
-  padding: 100px 20px 78px 20px;
+  padding-bottom: 78px;
 }
 .search-page {
-  padding: 40px 20px 0 20px;
+  padding-top: 40px;
 }
 .filter-page {
   position: relative;
   width: 375px;
   height: 812px;
   background: rgba(43, 43, 43, 0.4);
+}
+.test-page {
+  position: relative;
+  padding-top: 40px;
 }
 .title {
   font-weight: 800;
@@ -217,10 +236,11 @@ body {
   color: #1a1d1e;
   margin: 0 0 30px;
 }
-.search-page_return-button {
+.return-button {
   position: absolute;
-  top: 45px;
+  top: 40px;
   left: 20px;
+  cursor: pointer;
 }
 .search-panel_input {
   display: flex;
@@ -490,4 +510,60 @@ body {
   text-decoration-line: underline;
   color: #6a6a6a;
   cursor: pointer;
+}
+.test-page_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1a1d1e;
+  text-align: center;
+  margin: 0 0 46px;
+}
+.questions-list-button {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  cursor: pointer;
+}
+.test-page_test-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  color: #1a1d1e;
+  margin: 0 0 36px;
+}
+.field {
+  box-sizing: border-box;
+  padding: 24px;
+  width: 335px;
+  background: #ffffff;
+  box-shadow: 0px 10px 35px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.question-field {
+  margin-bottom: 16px;
+}
+.question-field_question-number {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1a1d1e;
+  margin: 0 0 16px;
+}
+.question-field_question {
+  font-size: 16px;
+  line-height: 130%;
+  color: #1a1d1e;
+  margin: 0;
+}
+.answer-field {
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 36px;
+}
+.button-group button:not(:last-child) {
+  margin-bottom: 16px;
 }
