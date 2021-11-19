@@ -365,13 +365,17 @@ body {
 .search-item_fav-button {
   width: 28px;
   height: 28px;
+  padding: 0;
   border-radius: 50%;
   border: none;
   background-color: #fafafa;
-  background-image: url(../img/fav.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fav-button_active {
+  fill: #ff0000;
 }
 .search-item_date {
   font-weight: 500;
@@ -389,6 +393,20 @@ body {
   border-radius: 30.5px 30.5px 0px 0px;
   box-sizing: border-box;
   padding-top: 20px;
+  z-index: 100;
+}
+.tabbar-shadow {
+  position: fixed;
+  bottom: 44px;
+  left: 0;
+  width: 375px;
+  height: 48px;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 21, 41, 0.07) 0%,
+    rgba(196, 196, 196, 7e-6) 100%
+  );
+  transform: rotate(180deg);
 }
 .tabbar_list {
   width: 275px;
@@ -525,6 +543,11 @@ body {
   cursor: pointer;
   padding: 0;
   flex: 0 0 29%;
+}
+.filter-authors_item_active {
+  background: #9990f9;
+  color: #ffffff;
+  border: 1px solid #9990f9;
 }
 .filter-authors_item:nth-child(1) {
   margin-bottom: 15px;

@@ -30,12 +30,36 @@ document.addEventListener('DOMContentLoaded', function() {
     filterBackground.classList.add('blackout-on');
     filterBackground.classList.remove('blackout-off');
   };
+
   function closeModal() {
     modalWindow.classList.add('translate-down');
     modalWindow.classList.remove('translate-up');
     filterBackground.classList.add('blackout-off');
     filterBackground.classList.remove('blackout-on');
   };
+
+  //filters modal window
+  let authorsList = document.querySelectorAll('.filter-authors_item');
+  let favButtonsList = document.querySelectorAll('.fav-button');
+
+  authorsList.forEach((author) => author.addEventListener('click', clickAuthorButton));
+  favButtonsList.forEach((fav) => fav.addEventListener('click', clickFavButton));
+
+  function clickAuthorButton() {
+    if (this.classList.contains('filter-authors_item_active') == false) {
+      this.classList.add("filter-authors_item_active");
+    } else {
+      this.classList.remove("filter-authors_item_active");
+    };
+  }
+
+  function clickFavButton() {
+    if (this.classList.contains('fav-button_active') == false) {
+      this.classList.add("fav-button_active");
+    } else {
+      this.classList.remove("fav-button_active");
+    };
+  }
 
   //test page
   let answerInputField = document.querySelector('.answer-input-field');
