@@ -74,7 +74,7 @@ body {
 .container {
   box-sizing: border-box;
   width: 375px;
-  height: 812px;
+  min-height: 812px;
   padding: 100px 20px 0 20px;
   background-color: #fbfbfb;
 }
@@ -93,6 +93,7 @@ body {
 .test-page {
   position: relative;
   padding-top: 40px;
+  padding-bottom: 135px;
 }
 .title {
   font-weight: 800;
@@ -561,8 +562,35 @@ body {
 .answer-field {
   font-size: 16px;
   line-height: 130%;
-  color: rgba(0, 0, 0, 0.5);
+  color: #1a1d1e;
+}
+.answer-field:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.answer-field:last-of-type {
   margin-bottom: 36px;
+}
+.answer-field::placeholder {
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(0, 0, 0, 0.5);
+}
+.answer-radio-field {
+  position: relative;
+  padding-left: 80px;
+  cursor: pointer;
+}
+.radio-button {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #7167da;
+  margin-right: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .button-group button:not(:last-child) {
   margin-bottom: 16px;
