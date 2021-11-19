@@ -74,7 +74,7 @@ body {
 .container {
   box-sizing: border-box;
   width: 375px;
-  min-height: 812px;
+  /*min-height: 812px;*/
   padding: 100px 20px 0 20px;
   background-color: #fbfbfb;
 }
@@ -83,6 +83,8 @@ body {
 }
 .search-page {
   padding-top: 40px;
+  height: 812px;
+  overflow: hidden;
 }
 .filter-page {
   position: relative;
@@ -403,15 +405,7 @@ body {
 .tabbar_item_active {
   fill: #7167da;
 }
-.filter-window_background {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(43, 43, 43, 0.4);
-  z-index: 0;
-}
+
 .blackout-on {
   opacity: 1;
   transform: scale(1);
@@ -426,23 +420,30 @@ body {
   width: 375px;
   height: 708px;
   background-color: #fbfbfb;
-  position: absolute;
+  position: fixed;
   left: 0;
-  bottom: 0;
+  top: 0;
   border-radius: 50px 50px 0 0;
   box-sizing: border-box;
   padding: 0 20px;
+  margin-top: 104px;
   transform: translateY(100%);
   z-index: 1;
-  overflow: hidden;
+}
+.filter-window_background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.4);
+  z-index: 0;
 }
 .translate-up {
-  opacity: 1;
   transform: translateY(0%);
   transition: transform 0.2s;
 }
 .translate-down {
-  opacity: 0;
   transform: translateY(100%);
   transition: transform 0.2s;
 }

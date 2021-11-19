@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   function openModal() {
+    console.log('click!');
     modalWindow.classList.add('translate-up');
+    console.log('click!');
     modalWindow.classList.remove('translate-down');
     filterBackground.classList.add('blackout-on');
     filterBackground.classList.remove('blackout-off');
