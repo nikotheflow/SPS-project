@@ -403,16 +403,45 @@ body {
 .tabbar_item_active {
   fill: #7167da;
 }
+.filter-window_background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 43, 43, 0.4);
+  z-index: 0;
+}
+.blackout-on {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s;
+}
+.blackout-off {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s;
+}
 .filter-window {
   width: 375px;
   height: 708px;
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   position: absolute;
   left: 0;
   bottom: 0;
   border-radius: 50px 50px 0 0;
   box-sizing: border-box;
   padding: 0 20px;
+  transform: translateY(100%);
+  z-index: 1;
+}
+.translate-up {
+  transform: translateY(0%);
+  transition: transform 0.2s;
+}
+.translate-down {
+  transform: translateY(100%);
+  transition: transform 0.2s;
 }
 .filter-window_line {
   text-align: center;

@@ -10,7 +10,32 @@ document.addEventListener('DOMContentLoaded', function() {
     this.classList.add("tabbar_item_active");
   };
 
-  //test-page
+  //search page  
+  let filterButton = document.querySelector('.search-panel_filter-button');
+  let modalWindow = document.querySelector('.filter-window');
+  let showResultsButton = document.querySelector('.show-results_button');
+  let filterBackground = document.querySelector('.filter-window_background');
+
+  if (filterButton) {
+    filterButton.addEventListener('click', openModal);
+    showResultsButton.addEventListener('click', closeModal);
+    filterBackground.addEventListener('click', closeModal);
+  };
+
+  function openModal() {
+    modalWindow.classList.add('translate-up');
+    modalWindow.classList.remove('translate-down');
+    filterBackground.classList.add('blackout-on');
+    filterBackground.classList.remove('blackout-off');
+  };
+  function closeModal() {
+    modalWindow.classList.add('translate-down');
+    modalWindow.classList.remove('translate-up');
+    filterBackground.classList.add('blackout-off');
+    filterBackground.classList.remove('blackout-on');
+  };
+
+  //test page
   let answerInputField = document.querySelector('.answer-input-field');
   let nextQuestionButton = document.querySelector('.next-question-button');
   let radioButtonList = document.querySelectorAll('.radio-button');
