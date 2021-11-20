@@ -1,237 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search</title>
-    <!-- add fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
-    <!-- add styles -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="container search-page">
-      <svg onclick="document.location='map.html'" class="return-button" width="14" height="25" viewBox="0 0 14 25" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.5 23L2 12.5L12.5 2" stroke="#1A1D1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-      <p class="search-page_title">Поиск</p>
-      <div class="search-panel">
-        <div class="search-panel_input">
-          <input type="text" placeholder="Ui Design" class="search-panel_search-field"></input>
-          <button class="search-panel_filter-button"></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search</title>
+  <!-- add fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <!-- add styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container search-page">
+    <svg onclick="document.location='map.html'" class="return-button" width="14" height="25" viewBox="0 0 14 25"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.5 23L2 12.5L12.5 2" stroke="#1A1D1E" stroke-width="3" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+    <p class="search-page_title">Поиск</p>
+    <div class="search-panel">
+      <div class="search-panel_input">
+        <input type="text" placeholder="Ui Design" class="search-panel_search-field"></input>
+        <button class="search-panel_filter-button"></button>
+      </div>
+      <p class="search-panel_search-result">Найдено 35 тестов</p>
+      <div class="search-panel_buttons choise-buttons">
+        <button class="choise-buttons_button choise-buttons_button_active">Популярные</button>
+        <button class="choise-buttons_button">Все тесты</button>
+      </div>
+      <div class="search-results">
+        <div onclick="document.location='test-first.html'" class="search-item">
+          <div class="search-item_image search-item_image_facebook"></div>
+          <div class="search-item_info">
+            <div class="search-item_author">Facebook</div>
+            <div class="search-item_name">UI/UX Designer</div>
+          </div>
+          <div class="search-item_column">
+            <button class="search-item_fav-button">
+              <svg class="fav-button" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z" />
+              </svg>
+            </button>
+            <span class="search-item_date">06h</span>
+          </div>
         </div>
-        <p class="search-panel_search-result">Найдено 35 тестов</p>
-        <div class="search-panel_buttons choise-buttons">
-          <button class="choise-buttons_button choise-buttons_button_active">Популярные</button>
-          <button class="choise-buttons_button">Все тесты</button>
+        <div class="search-item">
+          <div class="search-item_image search-item_image_dribbble"></div>
+          <div class="search-item_info">
+            <div class="search-item_author">Dribbble</div>
+            <div class="search-item_name">Product Designer</div>
+          </div>
+          <div class="search-item_column">
+            <button class="search-item_fav-button">
+              <svg class="fav-button" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z" />
+              </svg>
+            </button>
+            <span class="search-item_date">12h</span>
+          </div>
         </div>
-        <div class="search-results">
-          <div onclick="document.location='test-first.html'" class="search-item">
-            <div class="search-item_image search-item_image_facebook"></div>
-            <div class="search-item_info">
-              <div class="search-item_author">Facebook</div>
-              <div class="search-item_name">UI/UX Designer</div>
-            </div>
-            <div class="search-item_column">
-              <button class="search-item_fav-button">
-                <svg class="fav-button" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z"/>
-                </svg>
-              </button>
-              <span class="search-item_date">06h</span>
-            </div>
+        <div class="search-item">
+          <div class="search-item_image search-item_image_google"></div>
+          <div class="search-item_info">
+            <div class="search-item_author">Google</div>
+            <div class="search-item_name">Senior Ux Designer</div>
           </div>
-          <div class="search-item">
-            <div class="search-item_image search-item_image_dribbble"></div>
-            <div class="search-item_info">
-              <div class="search-item_author">Dribbble</div>
-              <div class="search-item_name">Product Designer</div>
-            </div>
-            <div class="search-item_column">
-              <button class="search-item_fav-button">
-                <svg class="fav-button" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z" />
-                </svg>
-              </button>
-              <span class="search-item_date">12h</span>
-            </div>
+          <div class="search-item_column">
+            <button class="search-item_fav-button">
+              <svg class="fav-button fav-button_active" width="15.1" height="13.8" viewBox="0 0 15.1 13.8"
+                fill="#C8C6DE" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z" />
+              </svg>
+            </button>
+            <span class="search-item_date">24h</span>
           </div>
-          <div class="search-item">
-            <div class="search-item_image search-item_image_google"></div>
-            <div class="search-item_info">
-              <div class="search-item_author">Google</div>
-              <div class="search-item_name">Senior Ux Designer</div>
-            </div>
-            <div class="search-item_column">
-              <button class="search-item_fav-button">
-                <svg class="fav-button fav-button_active" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z"/>
-                </svg>
-              </button>
-              <span class="search-item_date">24h</span>
-            </div>
+        </div>
+        <div class="search-item">
+          <div class="search-item_image search-item_image_facebook"></div>
+          <div class="search-item_info">
+            <div class="search-item_author">Facebook</div>
+            <div class="search-item_name">Visual Designer</div>
           </div>
-          <div class="search-item">
-            <div class="search-item_image search-item_image_facebook"></div>
-            <div class="search-item_info">
-              <div class="search-item_author">Facebook</div>
-              <div class="search-item_name">Visual Designer</div>
-            </div>
-            <div class="search-item_column">
-              <button class="search-item_fav-button">
-                <svg class="fav-button" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z"/>
-                </svg>
-              </button>
-              <span class="search-item_date">24h</span>
-            </div>
+          <div class="search-item_column">
+            <button class="search-item_fav-button">
+              <svg class="fav-button" width="15.1" height="13.8" viewBox="0 0 15.1 13.8" fill="#C8C6DE"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.0552 1.09835e-08C10.3402 0.00012472 9.63818 0.190537 9.02116 0.551683C8.40413 0.912829 7.89435 1.4317 7.54415 2.055C7.19388 1.43155 6.68394 0.912586 6.06672 0.55143C5.4495 0.190275 4.74727 -5.27909e-05 4.03215 1.09835e-08C2.93693 0.0591506 1.90667 0.53826 1.15569 1.33766C0.404716 2.13707 -0.00916265 3.19522 0.000153943 4.292C0.000153943 9.885 7.54415 13.787 7.54415 13.787C7.54415 13.787 15.0882 9.887 15.0882 4.292C15.0975 3.19506 14.6834 2.13676 13.9323 1.33733C13.1811 0.537904 12.1506 0.0589022 11.0552 1.09835e-08V1.09835e-08Z" />
+              </svg>
+            </button>
+            <span class="search-item_date">24h</span>
           </div>
         </div>
       </div>
-      <nav class="tabbar">        
-        <ul class="tabbar_list">
-          <li class="tabbar_item_home">
-            <svg class="tabbar_item tabbar_item_active" width="20" height="20" viewBox="0 0 20 20" fill="#A8A8AA" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M7.13478 18.7733V15.7156C7.13478 14.9351 7.77217 14.3023 8.55844 14.3023H11.4326C11.8102 14.3023 12.1723 14.4512 12.4393 14.7163C12.7063 14.9813 12.8563 15.3408 12.8563 15.7156V18.7733C12.8539 19.0978 12.9821 19.4099 13.2124 19.6402C13.4427 19.8705 13.7561 20 14.0829 20H16.0438C16.9596 20.0023 17.8388 19.6428 18.4872 19.0008C19.1356 18.3588 19.5 17.487 19.5 16.5778V7.86686C19.5 7.13246 19.1721 6.43584 18.6046 5.96467L11.934 0.675869C10.7737 -0.251438 9.11111 -0.221498 7.98539 0.746979L1.46701 5.96467C0.872741 6.42195 0.517552 7.12064 0.5 7.86686V16.5689C0.5 18.4639 2.04738 20 3.95617 20H5.87229C6.55123 20 7.103 19.4562 7.10792 18.7822L7.13478 18.7733Z"/>
-            </svg>            
-          </li>
-          <li class="tabbar_item_statistic">
-            <svg class="tabbar_item" width="22" height="20" viewBox="0 0 22 20" fill="#A8A8AA" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.52824 0.775234C3.65711 1.38102 1.37069 3.57643 0.622351 6.44604C0.0148805 8.77548 0.0148804 11.2245 0.622351 13.554C1.37069 16.4236 3.65711 18.619 6.52824 19.2248L7.07688 19.3405C9.66452 19.8865 12.3356 19.8865 14.9233 19.3405L15.4719 19.2248C18.3431 18.619 20.6295 16.4236 21.3778 13.554C21.9853 11.2245 21.9853 8.77548 21.3778 6.44605C20.6295 3.57643 18.3431 1.38102 15.4719 0.775233L14.9233 0.659478C12.3356 0.113507 9.66452 0.113507 7.07688 0.659478L6.52824 0.775234ZM13.7206 6.39937C13.5808 6.18721 13.3455 6.05977 13.0935 6.05977C12.8415 6.05977 12.6062 6.18721 12.4664 6.39937L8.90663 11.8027L7.44027 9.57696C7.30049 9.3648 7.06518 9.23736 6.8132 9.23736H4.71977C4.30355 9.23736 3.96614 9.5788 3.96614 9.99998C3.96614 10.4212 4.30355 10.7626 4.71977 10.7626H6.40987L8.27957 13.6006C8.41935 13.8128 8.65465 13.9402 8.90663 13.9402C9.15862 13.9402 9.39392 13.8128 9.5337 13.6006L13.0935 8.19723L14.5599 10.423C14.6996 10.6352 14.9349 10.7626 15.1869 10.7626H17.2804C17.6966 10.7626 18.034 10.4212 18.034 9.99998C18.034 9.5788 17.6966 9.23736 17.2804 9.23736H15.5903L13.7206 6.39937Z"/>
-            </svg>
-          </li>
-          <li class="tabbar_item_profile">
-            <svg class="tabbar_item" width="16" height="20" viewBox="0 0 16 20" fill="#A8A8AA" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M13.294 5.29105C13.294 8.22808 10.9391 10.5831 8 10.5831C5.0619 10.5831 2.70601 8.22808 2.70601 5.29105C2.70601 2.35402 5.0619 0 8 0C10.9391 0 13.294 2.35402 13.294 5.29105ZM8 20C3.66237 20 0 19.295 0 16.575C0 13.8539 3.68538 13.1739 8 13.1739C12.3386 13.1739 16 13.8789 16 16.599C16 19.32 12.3146 20 8 20Z"/>
-            </svg>
-          </li>
-          <li class="tabbar_item_setting">
-            <svg class="tabbar_item" width="19" height="20" viewBox="0 0 19 20" fill="#A8A8AA" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M17.9023 11.5801C18.26 11.7701 18.536 12.0701 18.7301 12.3701C19.1083 12.9901 19.0776 13.7501 18.7097 14.4201L17.9943 15.6201C17.6162 16.2601 16.911 16.6601 16.1855 16.6601C15.8278 16.6601 15.4292 16.5601 15.1022 16.3601C14.8365 16.1901 14.5299 16.1301 14.2029 16.1301C13.1911 16.1301 12.3429 16.9601 12.3122 17.9501C12.3122 19.1001 11.372 20.0001 10.1968 20.0001H8.80692C7.62145 20.0001 6.68125 19.1001 6.68125 17.9501C6.66081 16.9601 5.81259 16.1301 4.80085 16.1301C4.46361 16.1301 4.15702 16.1901 3.90153 16.3601C3.5745 16.5601 3.16572 16.6601 2.81825 16.6601C2.08245 16.6601 1.37729 16.2601 0.99917 15.6201L0.29402 14.4201C-0.0841044 13.7701 -0.104544 12.9901 0.273581 12.3701C0.437094 12.0701 0.743681 11.7701 1.09115 11.5801C1.37729 11.4401 1.56125 11.2101 1.73498 10.9401C2.24596 10.0801 1.93937 8.95012 1.07071 8.44012C0.0589696 7.87012 -0.268057 6.60012 0.314459 5.61012L0.99917 4.43012C1.59191 3.44012 2.85913 3.09012 3.88109 3.67012C4.77019 4.15012 5.925 3.83012 6.4462 2.98012C6.60972 2.70012 6.70169 2.40012 6.68125 2.10012C6.66081 1.71012 6.77323 1.34012 6.9674 1.04012C7.34553 0.420122 8.03024 0.0201221 8.77627 0.00012207H10.2172C10.9735 0.00012207 11.6582 0.420122 12.0363 1.04012C12.2203 1.34012 12.3429 1.71012 12.3122 2.10012C12.2918 2.40012 12.3838 2.70012 12.5473 2.98012C13.0685 3.83012 14.2233 4.15012 15.1226 3.67012C16.1344 3.09012 17.4118 3.44012 17.9943 4.43012L18.679 5.61012C19.2718 6.60012 18.9447 7.87012 17.9228 8.44012C17.0541 8.95012 16.7475 10.0801 17.2687 10.9401C17.4322 11.2101 17.6162 11.4401 17.9023 11.5801ZM6.60972 10.0101C6.60972 11.5801 7.9076 12.8301 9.51208 12.8301C11.1165 12.8301 12.3838 11.5801 12.3838 10.0101C12.3838 8.44012 11.1165 7.18012 9.51208 7.18012C7.9076 7.18012 6.60972 8.44012 6.60972 10.0101Z"/>
-            </svg>
-          </li>
-        </ul>
-      </nav>
-      <div class="tabbar-shadow"></div>
-      <div class="filter-window translate-down">
-        <div class="filter-window_line">
-          <svg width="80" height="4" viewBox="0 0 80 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="80" height="4" rx="2" fill="#E1E1E1" />
-          </svg>
-        </div>
-        <p class="filter-window_title">Фильтры</p>
-        <div class="select-blocks">
-          <div class="select-block">
-            <p class="select-block_title">Категория</p>
-            <div class="select-block_field">
-              <p class="select-block_option">UI/UX Design</p>
-              <div class="select-block_arrow">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
-                    stroke-linecap="square" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="select-block">
-            <p class="select-block_title">Навыки</p>
-            <div class="select-block_field">
-              <p class="select-block_option">Исследования</p>
-              <div class="select-block_arrow">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
-                    stroke-linecap="square" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="select-block_row">
-            <div class="select-block">
-              <p class="select-block_title">Язык</p>
-              <div class="select-block_field select-block_field_mini">
-                <div class="select-block_icon">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M3.53271 8.65936C3.54472 5.12554 6.41918 2.27054 9.953 2.28251C13.4868 2.29455 16.3418 5.16901 16.3299 8.70284V8.7753C16.2863 11.0724 15.0037 13.1956 13.4313 14.855C12.532 15.7889 11.5277 16.6156 10.4385 17.3188C10.1473 17.5707 9.71526 17.5707 9.42402 17.3188C7.80027 16.2619 6.37516 14.9275 5.21387 13.3767C4.17884 12.0244 3.59119 10.3831 3.53271 8.6811V8.65936Z"
-                      stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path opacity="0.4"
-                      d="M9.93134 10.8334C11.0639 10.8334 11.9821 9.91524 11.9821 8.78266C11.9821 7.65007 11.0639 6.73193 9.93134 6.73193C8.79876 6.73193 7.88062 7.65007 7.88062 8.78266C7.88062 9.91524 8.79876 10.8334 9.93134 10.8334Z"
-                      stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <p class="select-block_option select-block_option_mini">English</p>
-                <div class="select-block_arrow">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
-                      stroke-linecap="square" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="select-block">
-              <p class="select-block_title">Длительность</p>
-              <div class="select-block_field select-block_field_mini">
-                <div class="select-block_icon">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M18.0324 11.9964H14.6588C13.4201 11.9957 12.416 10.9924 12.4153 9.75371C12.4153 8.51501 13.4201 7.51175 14.6588 7.51099H18.0324"
-                      stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M15.0405 9.70239H14.7808" stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M6.45631 2.5H13.6592C16.0743 2.5 18.0322 4.45792 18.0322 6.87305V12.8539C18.0322 15.269 16.0743 17.227 13.6592 17.227H6.45631C4.04118 17.227 2.08325 15.269 2.08325 12.8539V6.87305C2.08325 4.45792 4.04118 2.5 6.45631 2.5Z"
-                      stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path opacity="0.4" d="M5.86304 6.28174H10.3622" stroke="#6A6A6A" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-      
-                </div>
-                <p class="select-block_option">1h-3h</p>
-                <div class="select-block_arrow">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
-                      stroke-linecap="square" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="filter-authors">
-          <p class="filter-authors_title">Автор</p>
-          <div class="filter-authors_list">
-            <div class="filter-authors_item filter-authors_item_active">
-              <p class="filter-authors_name">Google</p>
-            </div>
-            <div class="filter-authors_item">
-              <p class="filter-authors_name">Jet Brains</p>
-            </div>
-            <div class="filter-authors_item">
-              <p class="filter-authors_name">H&H</p>
-            </div>
-            <div class="filter-authors_item">
-              <p class="filter-authors_name">Facebook</p>
-            </div>
-            <div class="filter-authors_item filter-authors_item_active">
-              <p class="filter-authors_name">Remote</p>
-            </div>
-            <span class="filter-authors_all">Все</span>
-          </div>
-        </div>
-        <button class="show-results_button primary-button">Показать 35 результатов</button>
-      </div>
-      <div class="filter-window_background blackout-off"></div>
     </div>
-    
-    <script src="./script/script.js"></script>
-  </body>
+    <nav class="tabbar">
+      <ul class="tabbar_list">
+        <li onclick="document.location='map.html'" class="tabbar_item_home">
+          <svg class="tabbar_item" width="20" height="20" viewBox="0 0 20 20" fill="#A8A8AA"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.13478 18.7733V15.7156C7.13478 14.9351 7.77217 14.3023 8.55844 14.3023H11.4326C11.8102 14.3023 12.1723 14.4512 12.4393 14.7163C12.7063 14.9813 12.8563 15.3408 12.8563 15.7156V18.7733C12.8539 19.0978 12.9821 19.4099 13.2124 19.6402C13.4427 19.8705 13.7561 20 14.0829 20H16.0438C16.9596 20.0023 17.8388 19.6428 18.4872 19.0008C19.1356 18.3588 19.5 17.487 19.5 16.5778V7.86686C19.5 7.13246 19.1721 6.43584 18.6046 5.96467L11.934 0.675869C10.7737 -0.251438 9.11111 -0.221498 7.98539 0.746979L1.46701 5.96467C0.872741 6.42195 0.517552 7.12064 0.5 7.86686V16.5689C0.5 18.4639 2.04738 20 3.95617 20H5.87229C6.55123 20 7.103 19.4562 7.10792 18.7822L7.13478 18.7733Z" />
+          </svg>
+        </li>
+        <li onclick="document.location='statistic.html'" class="tabbar_item_statistic">
+          <svg class="tabbar_item" width="22" height="20" viewBox="0 0 22 20" fill="#A8A8AA"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.52824 0.775234C3.65711 1.38102 1.37069 3.57643 0.622351 6.44604C0.0148805 8.77548 0.0148804 11.2245 0.622351 13.554C1.37069 16.4236 3.65711 18.619 6.52824 19.2248L7.07688 19.3405C9.66452 19.8865 12.3356 19.8865 14.9233 19.3405L15.4719 19.2248C18.3431 18.619 20.6295 16.4236 21.3778 13.554C21.9853 11.2245 21.9853 8.77548 21.3778 6.44605C20.6295 3.57643 18.3431 1.38102 15.4719 0.775233L14.9233 0.659478C12.3356 0.113507 9.66452 0.113507 7.07688 0.659478L6.52824 0.775234ZM13.7206 6.39937C13.5808 6.18721 13.3455 6.05977 13.0935 6.05977C12.8415 6.05977 12.6062 6.18721 12.4664 6.39937L8.90663 11.8027L7.44027 9.57696C7.30049 9.3648 7.06518 9.23736 6.8132 9.23736H4.71977C4.30355 9.23736 3.96614 9.5788 3.96614 9.99998C3.96614 10.4212 4.30355 10.7626 4.71977 10.7626H6.40987L8.27957 13.6006C8.41935 13.8128 8.65465 13.9402 8.90663 13.9402C9.15862 13.9402 9.39392 13.8128 9.5337 13.6006L13.0935 8.19723L14.5599 10.423C14.6996 10.6352 14.9349 10.7626 15.1869 10.7626H17.2804C17.6966 10.7626 18.034 10.4212 18.034 9.99998C18.034 9.5788 17.6966 9.23736 17.2804 9.23736H15.5903L13.7206 6.39937Z" />
+          </svg>
+        </li>
+        <li onclick="document.location='search.html'" class="tabbar_item_search">
+          <svg class="tabbar_item tabbar_item_active" width="20" height="20" viewBox="0 0 20 20" fill="#A8A8AA"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.4369 1.30801C9.67773 0.895376 7.84698 0.895377 6.08786 1.30801C3.53519 1.90679 1.54204 3.89993 0.943266 6.4526C0.53063 8.21173 0.53063 10.0425 0.943266 11.8016C1.54204 14.3543 3.53519 16.3474 6.08786 16.9462C7.84698 17.3588 9.67773 17.3588 11.4368 16.9462C14.1338 16.4985 15.9969 14.2936 16.5814 11.8016C17.0044 9.99854 16.9941 8.21173 16.5814 6.45261C15.9827 3.89993 13.9895 1.90679 11.4369 1.30801Z" />
+            <path
+              d="M12.5263 13.7589C12.1358 13.3683 12.1358 12.7352 12.5263 12.3447C12.9168 11.9541 13.55 11.9541 13.9405 12.3447L18.8903 17.2944C19.2808 17.6849 19.2808 18.3181 18.8903 18.7086C18.4998 19.0991 17.8666 19.0991 17.4761 18.7086L12.5263 13.7589Z" />
+          </svg>
+        </li>
+        <li class="tabbar_item_setting">
+          <svg class="tabbar_item" width="19" height="20" viewBox="0 0 19 20" fill="#A8A8AA"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.9023 11.5801C18.26 11.7701 18.536 12.0701 18.7301 12.3701C19.1083 12.9901 19.0776 13.7501 18.7097 14.4201L17.9943 15.6201C17.6162 16.2601 16.911 16.6601 16.1855 16.6601C15.8278 16.6601 15.4292 16.5601 15.1022 16.3601C14.8365 16.1901 14.5299 16.1301 14.2029 16.1301C13.1911 16.1301 12.3429 16.9601 12.3122 17.9501C12.3122 19.1001 11.372 20.0001 10.1968 20.0001H8.80692C7.62145 20.0001 6.68125 19.1001 6.68125 17.9501C6.66081 16.9601 5.81259 16.1301 4.80085 16.1301C4.46361 16.1301 4.15702 16.1901 3.90153 16.3601C3.5745 16.5601 3.16572 16.6601 2.81825 16.6601C2.08245 16.6601 1.37729 16.2601 0.99917 15.6201L0.29402 14.4201C-0.0841044 13.7701 -0.104544 12.9901 0.273581 12.3701C0.437094 12.0701 0.743681 11.7701 1.09115 11.5801C1.37729 11.4401 1.56125 11.2101 1.73498 10.9401C2.24596 10.0801 1.93937 8.95012 1.07071 8.44012C0.0589696 7.87012 -0.268057 6.60012 0.314459 5.61012L0.99917 4.43012C1.59191 3.44012 2.85913 3.09012 3.88109 3.67012C4.77019 4.15012 5.925 3.83012 6.4462 2.98012C6.60972 2.70012 6.70169 2.40012 6.68125 2.10012C6.66081 1.71012 6.77323 1.34012 6.9674 1.04012C7.34553 0.420122 8.03024 0.0201221 8.77627 0.00012207H10.2172C10.9735 0.00012207 11.6582 0.420122 12.0363 1.04012C12.2203 1.34012 12.3429 1.71012 12.3122 2.10012C12.2918 2.40012 12.3838 2.70012 12.5473 2.98012C13.0685 3.83012 14.2233 4.15012 15.1226 3.67012C16.1344 3.09012 17.4118 3.44012 17.9943 4.43012L18.679 5.61012C19.2718 6.60012 18.9447 7.87012 17.9228 8.44012C17.0541 8.95012 16.7475 10.0801 17.2687 10.9401C17.4322 11.2101 17.6162 11.4401 17.9023 11.5801ZM6.60972 10.0101C6.60972 11.5801 7.9076 12.8301 9.51208 12.8301C11.1165 12.8301 12.3838 11.5801 12.3838 10.0101C12.3838 8.44012 11.1165 7.18012 9.51208 7.18012C7.9076 7.18012 6.60972 8.44012 6.60972 10.0101Z" />
+          </svg>
+        </li>
+      </ul>
+    </nav>
+    <div class="tabbar-shadow"></div>
+    <div class="filter-window translate-down">
+      <div class="filter-window_line">
+        <svg width="80" height="4" viewBox="0 0 80 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="80" height="4" rx="2" fill="#E1E1E1" />
+        </svg>
+      </div>
+      <p class="filter-window_title">Фильтры</p>
+      <div class="select-blocks">
+        <div class="select-block">
+          <p class="select-block_title">Категория</p>
+          <div class="select-block_field">
+            <p class="select-block_option">UI/UX Design</p>
+            <div class="select-block_arrow">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
+                  stroke-linecap="square" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="select-block">
+          <p class="select-block_title">Навыки</p>
+          <div class="select-block_field">
+            <p class="select-block_option">Исследования</p>
+            <div class="select-block_arrow">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
+                  stroke-linecap="square" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="select-block_row">
+          <div class="select-block">
+            <p class="select-block_title">Язык</p>
+            <div class="select-block_field select-block_field_mini">
+              <div class="select-block_icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.53271 8.65936C3.54472 5.12554 6.41918 2.27054 9.953 2.28251C13.4868 2.29455 16.3418 5.16901 16.3299 8.70284V8.7753C16.2863 11.0724 15.0037 13.1956 13.4313 14.855C12.532 15.7889 11.5277 16.6156 10.4385 17.3188C10.1473 17.5707 9.71526 17.5707 9.42402 17.3188C7.80027 16.2619 6.37516 14.9275 5.21387 13.3767C4.17884 12.0244 3.59119 10.3831 3.53271 8.6811V8.65936Z"
+                    stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path opacity="0.4"
+                    d="M9.93134 10.8334C11.0639 10.8334 11.9821 9.91524 11.9821 8.78266C11.9821 7.65007 11.0639 6.73193 9.93134 6.73193C8.79876 6.73193 7.88062 7.65007 7.88062 8.78266C7.88062 9.91524 8.79876 10.8334 9.93134 10.8334Z"
+                    stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <p class="select-block_option select-block_option_mini">English</p>
+              <div class="select-block_arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
+                    stroke-linecap="square" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="select-block">
+            <p class="select-block_title">Длительность</p>
+            <div class="select-block_field select-block_field_mini">
+              <div class="select-block_icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.0324 11.9964H14.6588C13.4201 11.9957 12.416 10.9924 12.4153 9.75371C12.4153 8.51501 13.4201 7.51175 14.6588 7.51099H18.0324"
+                    stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15.0405 9.70239H14.7808" stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.45631 2.5H13.6592C16.0743 2.5 18.0322 4.45792 18.0322 6.87305V12.8539C18.0322 15.269 16.0743 17.227 13.6592 17.227H6.45631C4.04118 17.227 2.08325 15.269 2.08325 12.8539V6.87305C2.08325 4.45792 4.04118 2.5 6.45631 2.5Z"
+                    stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path opacity="0.4" d="M5.86304 6.28174H10.3622" stroke="#6A6A6A" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
+              <p class="select-block_option">1h-3h</p>
+              <div class="select-block_arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.3999 7.80005L8.9999 11.4L12.5999 7.80005" stroke="#6A6A6A" stroke-width="1.5"
+                    stroke-linecap="square" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-authors">
+        <p class="filter-authors_title">Автор</p>
+        <div class="filter-authors_list">
+          <div class="filter-authors_item filter-authors_item_active">
+            <p class="filter-authors_name">Google</p>
+          </div>
+          <div class="filter-authors_item">
+            <p class="filter-authors_name">Jet Brains</p>
+          </div>
+          <div class="filter-authors_item">
+            <p class="filter-authors_name">H&H</p>
+          </div>
+          <div class="filter-authors_item">
+            <p class="filter-authors_name">Facebook</p>
+          </div>
+          <div class="filter-authors_item filter-authors_item_active">
+            <p class="filter-authors_name">Remote</p>
+          </div>
+          <span class="filter-authors_all">Все</span>
+        </div>
+      </div>
+      <button class="show-results_button primary-button">Показать 35 результатов</button>
+    </div>
+    <div class="filter-window_background blackout-off"></div>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+
 </html>
