@@ -104,8 +104,7 @@ body {
 }
 .map-page {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding: 60px 0 80px 0;
 }
 .title {
   font-weight: 800;
@@ -403,7 +402,7 @@ body {
   border-radius: 30.5px 30.5px 0px 0px;
   box-sizing: border-box;
   padding-top: 20px;
-  z-index: 1;
+  z-index: 10;
 }
 .tabbar-shadow {
   position: fixed;
@@ -417,6 +416,7 @@ body {
     rgba(196, 196, 196, 7e-6) 100%
   );
   transform: rotate(180deg);
+  z-index: 5;
 }
 .tabbar_list {
   width: 275px;
@@ -454,7 +454,7 @@ body {
   box-sizing: border-box;
   padding: 0 20px;
   transform: translateY(100%);
-  z-index: 2;
+  z-index: 20;
 }
 .filter-window_background {
   position: fixed;
@@ -463,7 +463,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(43, 43, 43, 0.4);
-  z-index: 0;
+  z-index: 15;
 }
 .translate-up {
   transform: translateY(0%);
@@ -670,7 +670,7 @@ body {
 
 .map-page_title,
 .map-page_text {
-  margin: 0 0 25px;
+  margin: 0 20px 25px 20px;
   padding-left: 10px;
 }
 .map-panel {
@@ -678,18 +678,28 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.map-panel_hierarchy {
+.map-panel_hierarchy_one {
   position: absolute;
   left: 34px;
   top: 258px;
   opacity: 0.2;
+  z-index: 0;
+}
+.map-panel_hierarchy_two {
+  position: absolute;
+  left: 34px;
+  top: 515px;
+  opacity: 0.2;
+  z-index: 0;
 }
 .map-panel-element1 {
   margin-bottom: 5px;
 }
 .map-page_primary-button {
-  margin-bottom: 15px;
+  width: 335px;
+  margin: 0 20px 15px;
   box-shadow: 0px 10px 35px -10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 .map_search-button {
   position: absolute;
@@ -712,10 +722,10 @@ body {
   box-shadow: 0px 10px 35px -10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
   align-items: center;
-  padding: 24px;
   cursor: pointer;
+  margin: 0 20px 10px 20px;
+  padding: 24px;
 }
 .map-area_name {
   font-weight: 500;
@@ -736,7 +746,7 @@ body {
   );
   box-sizing: border-box;
   box-shadow: 0px 10px 35px -10px rgba(0, 0, 0, 0.1);
-  margin: 15px 0 15px auto;
+  margin: 0 20px 15px auto;
   padding: 24px;
   cursor: pointer;
 }
@@ -786,9 +796,10 @@ body {
   max-width: 375px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-left: 20px;
   overflow-x: scroll;
+  z-index: 1;
 }
 
 .map-results_element1 {
