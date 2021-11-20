@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function completeTest() {
     if (this.classList.contains('primary-button_disable') == false) {
-      document.location.href = 'index.html';
+      document.location.href = 'map.html';
     };  
   }; 
   
