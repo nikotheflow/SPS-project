@@ -103,5 +103,26 @@ document.addEventListener('DOMContentLoaded', function() {
     radio.classList.remove('radio-button_active'));
     this.classList.add("radio-button_active");
     completeTestButton.classList.remove('primary-button_disable');
+  };  
+
+  //tests page
+  let recommendationButton = document.querySelector('.recomendation-block_header');
+  let recommendationPanel = document.querySelector('.recommendation-block_panel');
+  let arrowButton = document.querySelector('.tests-page_recommendation-block_arrow');
+
+  if (recommendationButton) {    
+    recommendationButton.addEventListener('click', showRecommendations);
+  };
+
+  function showRecommendations() {
+    if (recommendationPanel.classList.contains('recommendation-block_panel_hide') == true) {
+      recommendationPanel.classList.remove('recommendation-block_panel_hide');
+      arrowButton.classList.remove('arrow-rotate');
+    } else {
+      recommendationPanel.classList.add('recommendation-block_panel_hide');
+      arrowButton.classList.add('arrow-rotate');
+    };
   };
 });
+
+

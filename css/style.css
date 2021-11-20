@@ -896,10 +896,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  cursor: pointer;
 }
 .recommendation-block_arrow {
   cursor: pointer;
+}
+.arrow-rotate {
+  transform: rotate(180deg);
 }
 .recommendation-block_heading {
   font-weight: bold;
@@ -922,6 +925,10 @@ body {
   width: 700px;
   display: flex;
   flex-direction: row;
+  padding-top: 16px;
+}
+.recommendation-block_panel_hide {
+  display: none;
 }
 .recommendation-block_panel_element1 {
   box-sizing: border-box;
